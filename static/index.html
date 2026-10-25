@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>جاري التوجيه...</title>
+    <!-- هذا السطر يستدعي أداة الهوية المفقودة في الصفحة الرئيسية -->
+    </script>
+  </head>
+  <body>
+    <p style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+      جاري فتح نافذة تعيين كلمة المرور، انتظر ثوانٍ...
+    </p>
+    <script>
+      // كود سحري يجبر المتصفح على فتح النافذة فوراً وتحويلك للوحة التحكم
+      window.addEventListener("load", () => {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+          // فتح النافذة تلقائياً
+          window.netlifyIdentity.open();
+        }
+      });
+    </script>
+  </body>
+</html>
