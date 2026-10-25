@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yourusername/your-repo-name
+  repo: bohmaed/first-blog
   branch: main
 
 
