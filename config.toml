@@ -3,3 +3,6 @@
 extended = true
 min = "0.164.0"
 max = "0.167.0"
+
+[params.cms]
+enable = true
