@@ -1,7 +1,7 @@
-backend:
-  name: github
-  repo: bohmaed/first-blog
+bbackend:
+  name: git-gateway
   branch: main
+
 
 
 media_folder: "static/uploads"
