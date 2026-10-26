@@ -1,6 +1,5 @@
-bbackend:
-  name: git-gateway
-  branch: main
+backend:
+  name: netlify-identity
 
 
 
